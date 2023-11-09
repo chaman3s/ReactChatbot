@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/ReactChatbot/static/css/main.da735d7c.chunk.css",
-    "main.js": "/ReactChatbot/static/js/main.3646fbcd.chunk.js",
-    "main.js.map": "/ReactChatbot/static/js/main.3646fbcd.chunk.js.map",
+    "main.js": "/ReactChatbot/static/js/main.b69771c4.chunk.js",
+    "main.js.map": "/ReactChatbot/static/js/main.b69771c4.chunk.js.map",
     "runtime-main.js": "/ReactChatbot/static/js/runtime-main.b43c46e3.js",
     "runtime-main.js.map": "/ReactChatbot/static/js/runtime-main.b43c46e3.js.map",
     "static/js/2.28489fe6.chunk.js": "/ReactChatbot/static/js/2.28489fe6.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.b43c46e3.js",
     "static/js/2.28489fe6.chunk.js",
     "static/css/main.da735d7c.chunk.css",
-    "static/js/main.3646fbcd.chunk.js"
+    "static/js/main.b69771c4.chunk.js"
   ]
 }
