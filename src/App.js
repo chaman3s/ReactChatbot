@@ -8,21 +8,23 @@ import Faq from './components/Faq'
 import Help from './components/Help'
 import './App.css'
 import Slider from './components/Slider'
-
+import LoginSignup from './components/LoginSignup/LoginSignup.jsx'
+import Forget from './components/LoginSignup/Forget.js'
 const App = () => {
   return (
     <Router>
+      <Route path="/" component={LoginSignup}  />
       <Header />
 
       <main className="py-3">
         <Container>
-          <div className="bot">
-            <Route path="/" component={Chatbot} exact />
-          </div>
+          
+            
+     
           <Route path="/faq" component={Faq} />
           <Route path="/help" component={Help} />
-
-          <Route path="/" component={Slider} exact />
+          <Route path="/Forget" component={Forget} />
+          <Route path="/chatbot" component={Slider} exact />
         </Container>
       </main>
       <Footer />
