@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ReactChatbot/static/css/main.ad20af14.chunk.css",
+    "main.js": "/ReactChatbot/static/js/main.80fb1dda.chunk.js",
+    "main.js.map": "/ReactChatbot/static/js/main.80fb1dda.chunk.js.map",
+    "runtime~main.js": "/ReactChatbot/static/js/runtime~main.7474e076.js",
+    "runtime~main.js.map": "/ReactChatbot/static/js/runtime~main.7474e076.js.map",
+    "static/js/2.1bc09a8d.chunk.js": "/ReactChatbot/static/js/2.1bc09a8d.chunk.js",
+    "static/js/2.1bc09a8d.chunk.js.map": "/ReactChatbot/static/js/2.1bc09a8d.chunk.js.map",
+    "index.html": "/ReactChatbot/index.html",
+    "precache-manifest.dc3d9d5d4f6b8a5cc823773d001e0e14.js": "/ReactChatbot/precache-manifest.dc3d9d5d4f6b8a5cc823773d001e0e14.js",
+    "service-worker.js": "/ReactChatbot/service-worker.js",
+    "static/css/main.ad20af14.chunk.css.map": "/ReactChatbot/static/css/main.ad20af14.chunk.css.map"
+  }
+}

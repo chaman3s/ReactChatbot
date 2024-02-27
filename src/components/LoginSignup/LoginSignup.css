@@ -1,11 +1,14 @@
-.container{
+.containers{
+    position: relative;
     display: flex;
-    flex-direction:column ;
+    flex-direction: column;
     margin: auto;
-    margin-top: 200px;
-    width: 600px;
+    margin-top: 1%;
+    width: 36%;
+    height: 29%;
     background: #fff;
     padding-bottom: 30px;
+
 }
 .header{
     display:flex;
@@ -27,7 +30,7 @@
     border-radius: 9px;
 }
 .inputs{
-    margin-top: 55px;
+    margin-top: 10%;
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -36,8 +39,8 @@
     display: flex;
     align-items: center;
     margin: auto;
-    width: 490px;
-    height: 80px;
+    width: 91%;
+    height: 9%;
     background: #eaeaea;
     border-radius: 6px;
 }
@@ -67,7 +70,9 @@
     display: flex;
     gap: 30px;
     margin: 60px auto;
+    width: 90%;
 }
+
 .submit{
     display: flex;
     justify-content: center;
@@ -84,4 +89,14 @@
 .gray{
     background: #eaeaea;
     color:#676767;
+}
+.error{
+    position: absolute;
+    background: red;
+    width: 94%;
+    color: #fff;
+    height: 3%;
+    margin-top: 34%;
+    margin-bottom: 0%;
+    
 }

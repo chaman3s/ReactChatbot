@@ -7,7 +7,10 @@ import {
 } from "firebase/auth";
 
 import { getDatabase, ref, set, onValue, push } from "firebase/database";
-
+const configContainer= {
+  "margin-top": "7%"
+}
+const configHeader = {   " margin-top": "13%"}
 const Forget = () => {
   let email_icon = require("./Assets/email.png");
   let action = "Forget Password";
@@ -33,8 +36,8 @@ const Forget = () => {
       });
   };
   return (
-    <div className="container">
-      <div className="header">
+    <div style={configContainer} className="containers">
+      <div style={configHeader} className="header">
         <div className="text">{action}</div>
         <div className="underline"></div>
       </div>
@@ -46,7 +49,7 @@ const Forget = () => {
       </div>
 
       <div className="submit-container">
-        <div style={{color: "black"}} className={action === "Forget Password"} onClick={() => {Click()}}>
+        <div style={{width:"100%"}} className={"submit"} onClick={() => {Click()}}>
           Forget password
         </div>
       </div>

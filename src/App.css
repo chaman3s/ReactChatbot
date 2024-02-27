@@ -2,11 +2,12 @@
 
 .bot {
   bottom: 0;
-  right: 0;
+  right: 8%;
   margin: 10px;
   position: fixed;
   width: 350px;
   z-index: 94;
+
 }
 
 .btn {
@@ -37,4 +38,7 @@ a {
 .img {
   height: 200px;
   width: 300px;
+}
+.popup{
+  
 }

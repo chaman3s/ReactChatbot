@@ -22,7 +22,12 @@ const LoginSignup = () => {
  const[action,setAction] = useState("Login"); 
  const[email,setemail]= useState("");
  const[name,setname]= useState("");
- const[passwd,setpasswd]= useState("");   
+ const[passwd,setpasswd]= useState("");  
+ const[Message, setMessage]= useState({
+       message: "",
+       style: "none",
+       color: "red"
+ }); 
  const history = useHistory();
 
 let Forget=()=>{
@@ -44,6 +49,10 @@ let Forget=()=>{
   .catch((error) => {
     const errorCode = error.code;
     const errorMessage = error.message;
+    setMessage({
+      message: errorMessage,
+      style:"block"
+    });
     console.log(errorMessage);
     // ..
   });
@@ -52,19 +61,25 @@ let Forget=()=>{
 let LoginCheck=() =>{
   
   signInWithEmailAndPassword(auth, email, passwd)
-  .then((userCredential) => {
-    // Signed in 
-    const user = userCredential.user;
-    console.log(user);
-    
-    history.push("/chatbot")
+  .then(async(res) => {
+    const user = res.user;
+    if(user.uid){
+      localStorage.setItem('user', JSON.stringify({
+        userid: user.uid,
+        name: user.displayName,
+        email: user.email
+      }));
+      history.push('/');
+      console.log(localStorage.getItem('user'));
 
-
-    // ...
+    }
+    console.log(user.uid);  // ...
   })
   .catch((error) => {
     const errorCode = error.code;
     const errorMessage = error.message;
+  setMessage(errorMessage);
+   
     console.log(errorMessage);
   });
 }
@@ -88,11 +103,14 @@ let db = getDatabase(fi);
   };
 
   return (
-    <div className='container'>
+    <div className='containers'>
+      
         <div className="header">
             <div className="text">{action}</div>
             <div className="underline"></div>
         </div>
+        <div style={{display:Message.style}}className="error">{Message.message}</div>
+
         <div className="inputs">
             
             {action==="Login"?<div></div>:<div className="input"><img src={user_icon} alt="" />
