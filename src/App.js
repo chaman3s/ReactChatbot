@@ -39,7 +39,7 @@ const App = () => {
           <Route path="/Forget" component = {Forget} exact/>
        </div>   
        <>
-       <div style={{display:(localStorage.getItem('user'))?"block":"none"}} >
+       <div style={{display:"block"}} >
         <Header />
 
         <main className="py-3">
