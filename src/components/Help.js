@@ -29,10 +29,10 @@ const Help = () => {
       </div>
       <div className="mt-5">
         <h3>Contact</h3>
-        <p> Fax: +91-281-2224258</p>
+        <p> Fax: +91-9354861574</p>
         <p>
           {' '}
-          E-Mail:<a href="mailto:mc_rmc@yahoo.co.in"> mc_rmc@rmc.gov.in</a>{' '}
+          E-Mail:<a href="mailto:chamanggarwal@gamil.com"> chamanggarwal@gamil.com</a>{' '}
         </p>
         <p>
           {' '}
